@@ -1,0 +1,46 @@
+//alert("Hello, World!")
+//window.alert("Hello, World! for the second time");
+//alert("Hello, World! for the third time");
+//alert(4 * 7);
+//alert(true);
+//alert("text 1", "text 2"); 
+/*let decision = window.confirm("Is your name makinde?");
+console.log(decision);*/
+/*let remove = confirm("Remove all data?");
+function message(remove){
+    if(remove){
+        alert("All data removed");
+    }else{
+        //alert("No data removed");
+    }
+}*/
+/*console.log(message(remove));
+let remove = confirm("Remove all data?");
+let message = remove ? "Deleting Data" : "Cancelled"
+console.log(message);*/
+/*let quiz = prompt("Enter your number");
+let message = 20 && 10 ? alert("You win") : alert("You lose");
+console.log(quiz);*/
+/*let name = window.prompt("What is your name?", "John Doe");
+name = name ? name : "anonymous";*/
+/*let age = prompt(`Hello ${name} how old are you?`);
+alert(`${name} is ${age} years old`);*/
+/*let isUserReady = confirm("Are you ready?");
+if (isUserReady) {
+    alert("User ready!");
+}
+else {
+    alert("User not ready!");
+}
+console.log(isUserReady);*/
+// let unitPrice = 10;
+// let pieces = prompt("How many pieces do you order?", 0);
+// if (pieces > 0) {
+//     let total = unitPrice * pieces;
+//     alert(`Total price is ${total}`);
+//     console.log(total);
+// }
+// console.log(total); // ReferenceError: total is not defined
+
+
+

@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 300px;
+    margin: 70px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.Alreadyaccount{
+    display: flex;
+    font-size: 12px;
+    gap: 25px;
+}
+.Alreadyaccount a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+/* .Alreadyaccount a:hover{
+    font-size: 15px;
+    transition: 0.6s;
+} */
+.Alreadyaccount a:hover::before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: relative;
+    top: 14px;
+    transform: rotate(45deg);
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.671);
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 15px;
+}
+input[type="text"],
+input[type="password"],
+button {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
