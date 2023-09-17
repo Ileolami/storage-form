@@ -16,6 +16,7 @@ formCreate.addEventListener('submit', function(e) {
     } else {
         alert('Please fill in all fields!');
     }
+    formCreate.reset();
 });
 
 document.addEventListener('DOMContentLoaded', function() {
