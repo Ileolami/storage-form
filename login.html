@@ -12,17 +12,20 @@
             <h3>Login</h3>
             <form id="login">
                 <input type="text" id="login-username" placeholder="Username">
+                <div class="error">please fill this field</div>
                 <input type="password" id="login-password" placeholder="Password">
+                <div class="error">please fill this field</div>
                 <button type="submit">Login</button>
             </form>
         </div>
         <div id="dashboard" style="display:none;">
             <h3>Welcome to the Dashboard</h3>
             <p>Hello, <span id="user-display"></span>!</p>
-            <button type="summit">Logout</button>
+            <button type="reset" onclick=" window.location.href='index.html';">Logout</button>
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
 

@@ -48,6 +48,13 @@ button {
     border: 1px solid #ccc;
     border-radius: 3px;
 }
+.error {
+    color: red;
+    margin-top: -10px;
+    font-size: 10px;
+    text-align: left;
+    display: none;
+}
 button {
     background-color: #007bff;
     color: #fff;

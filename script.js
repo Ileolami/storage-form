@@ -1,7 +1,8 @@
-
+const error = document.querySelector('.error');
 const users = JSON.parse(localStorage.getItem('users')) || [];
 
 const formCreate = document.querySelector('#create');
+console.log(formCreate)
 formCreate.addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -14,30 +15,9 @@ formCreate.addEventListener('submit', function(e) {
         alert('User created successfully!');
         console.log(users);
     } else {
-        alert('Please fill in all fields!');
+        // alert('Please fill in all fields!');
+        error.style.display = 'block';
     }
     formCreate.reset();
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const formLogin = document.querySelector('#login');
-    formLogin.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        const loginUsername = document.querySelector('#login-username').value;
-        const loginPassword = document.querySelector('#login-password').value;
-
-        if (loginUsername && loginPassword) {
-            const user = users.find(u => u.username === loginUsername && u.password === loginPassword);
-            if (user) {
-                alert('Login successful!');
-                window.location.href = 'index.html';
-            } else {
-                alert('Username or password is incorrect!');
-            }
-        } else {
-            alert('Please fill in all fields!');
-        }
-        formLogin.reset();
-    });
-});
