@@ -1,4 +1,4 @@
-const error = document.querySelector('.error');
+
 const users = JSON.parse(localStorage.getItem('users')) || [];
 
 const formCreate = document.querySelector('#create');
@@ -16,6 +16,7 @@ formCreate.addEventListener('submit', function(e) {
         console.log(users);
     } else {
         // alert('Please fill in all fields!');
+        const error = document.querySelector('.error');
         error.style.display = 'block';
     }
     formCreate.reset();
